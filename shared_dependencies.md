@@ -1,15 +1,27 @@
-1. Dependencies: All the Dart files will share the Flutter SDK dependency. The "pubspec.yaml" file will contain this dependency along with other packages like Dio for network requests, path_provider for file handling, and video_player for playing videos.
+1. Flutter SDK: All the files share the Flutter SDK as a dependency for building the UI and handling the app logic.
 
-2. Exported Variables: The "constants.dart" file will export common variables such as BASE_URL, DOWNLOAD_PATH, etc. These will be shared across "video_downloader.dart", "url_parser.dart", and possibly in screens.
+2. Dart language: All the Dart files (.dart) share the Dart language for coding the app.
 
-3. Data Schemas: The "video_downloader.dart" and "url_parser.dart" services might share a Video model schema, which could include fields like videoUrl, title, thumbnailUrl, etc.
+3. Models: The "user.dart", "product.dart", "cart.dart", and "order.dart" files share the data schemas for the User, Product, Cart, and Order entities respectively.
 
-4. ID Names of DOM Elements: As Flutter uses Widgets instead of DOM, there will be key names for widgets like 'downloadButton', 'videoCard', 'homeScreen', 'downloadScreen' which will be used in testing.
+4. Services: The "auth_service.dart", "product_service.dart", "cart_service.dart", and "order_service.dart" files share the functions for handling authentication, product management, cart management, and order management respectively.
 
-5. Message Names: There might be shared message names for error handling and user notifications like 'downloadError', 'invalidUrl', 'downloadSuccess', etc.
+5. Screens: The "home.dart", "login.dart", "register.dart", "profile.dart", "cart.dart", "product_list.dart", "product_details.dart", "checkout.dart", and "orders.dart" files share the UI components for the respective screens.
 
-6. Function Names: Shared function names might include 'downloadVideo', 'parseUrl', 'saveFile', etc. These functions will be defined in the services and used in the screens.
+6. Widgets: The "product_card.dart", "cart_item.dart", and "order_item.dart" files share the UI components for the respective items.
 
-7. Shared Widgets: "video_card.dart" and "download_button.dart" will be shared widgets used in both "home_screen.dart" and "download_screen.dart".
+7. Constants: The "constants.dart" file shares the constant values used across the app.
 
-8. Android and iOS Specific Configurations: "AndroidManifest.xml" and "Info.plist" will share configurations related to permissions like internet access, file system access, etc.
+8. Routes: The "routes.dart" file shares the route names used for navigation across the app.
+
+9. Theme: The "theme.dart" file shares the theme data used for styling the app.
+
+10. Pubspec.yaml: This file shares the project metadata and dependencies.
+
+11. AndroidManifest.xml and Info.plist: These files share the app configuration for Android and iOS platforms respectively.
+
+12. widget_test.dart: This file shares the widget tests for the app.
+
+13. .gitignore: This file shares the list of files and directories that Git should ignore.
+
+14. README.md: This file shares the documentation for the app.
