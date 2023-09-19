@@ -1,20 +1,18 @@
-// Constants for the Flutter app
+// flutter_app/lib/utils/constants.dart
 
 class Constants {
-  // Base URL for the video source
-  static const String BASE_URL = 'https://example.com';
-
-  // Path for saving downloaded videos
-  static const String DOWNLOAD_PATH = '/downloads/videos/';
-
-  // Error messages
-  static const String DOWNLOAD_ERROR = 'Error in downloading video';
-  static const String INVALID_URL = 'Invalid URL';
-  static const String DOWNLOAD_SUCCESS = 'Video downloaded successfully';
-
-  // Widget keys for testing
-  static const String DOWNLOAD_BUTTON_KEY = 'downloadButton';
-  static const String VIDEO_CARD_KEY = 'videoCard';
-  static const String HOME_SCREEN_KEY = 'homeScreen';
-  static const String DOWNLOAD_SCREEN_KEY = 'downloadScreen';
+  // App related constants
+  static const String appName = 'Grocery Store CRM';
+  
+  // API related constants
+  static const String baseUrl = 'https://api.grocerystore.com';
+  static const String loginEndpoint = '/login';
+  static const String registerEndpoint = '/register';
+  static const String productsEndpoint = '/products';
+  static const String cartEndpoint = '/cart';
+  static const String orderEndpoint = '/order';
+  
+  // UI related constants
+  static const double padding = 16.0;
+  static const double avatarRadius = 45.0;
 }
